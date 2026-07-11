@@ -251,3 +251,16 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+// GIF Fullscreen logic
+window.openGifModal = function(btn) {
+  const img = btn.parentElement.querySelector("img");
+  const modalImg = document.getElementById("gifModalImg");
+  modalImg.src = img.src;
+  const modal = document.getElementById("gifModal");
+  modal.classList.add("active");
+};
+
+window.closeGifModal = function() {
+  document.getElementById("gifModal").classList.remove("active");
+};
