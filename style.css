@@ -88,6 +88,9 @@ img { max-width: 100%; height: auto; display: block; }
 .slide-inner {
   width: 100%; max-width: 1100px;
 }
+.slide-inner:has(.wf-img) {
+  max-width: 95%;
+}
 
 /* ===== BOTTOM BAR ===== */
 .bottom-bar {
@@ -358,11 +361,12 @@ img { max-width: 100%; height: auto; display: block; }
 .wf-info h4 { font-size: 0.82rem; margin-bottom: 0.15rem; }
 .wf-info p { font-size: 0.7rem; color: var(--white-50); }
 
-.wf-img img { border-radius: 16px; box-shadow: 0 16px 50px rgba(0,0,0,0.4); }
+.two-col:has(.wf-img) { grid-template-columns: 2.5fr 1fr; gap: 2rem; }
+.wf-img img { border-radius: 16px; box-shadow: 0 16px 50px rgba(0,0,0,0.4); width: 100%; height: auto; max-width: none; }
 
 /* ===== MAP ===== */
-.map-wrap { position: relative; max-width: 800px; margin: 0 auto; }
-.map-wrap img { width: 100%; border-radius: 16px; box-shadow: 0 16px 50px rgba(0,0,0,0.4); }
+.map-wrap { position: relative; max-width: 900px; margin: 0 auto; }
+.map-wrap img { width: 100%; max-height: 65vh; object-fit: contain; border-radius: 16px; box-shadow: 0 16px 50px rgba(0,0,0,0.4); }
 .map-spots { position: absolute; inset: 0; }
 
 .hotspot {
