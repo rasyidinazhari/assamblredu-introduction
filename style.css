@@ -361,12 +361,12 @@ img { max-width: 100%; height: auto; display: block; }
 .wf-info h4 { font-size: 0.82rem; margin-bottom: 0.15rem; }
 .wf-info p { font-size: 0.7rem; color: var(--white-50); }
 
-.praktik-col { grid-template-columns: 2.5fr 1fr; gap: 2rem; }
+.praktik-col { display: grid; align-items: center; grid-template-columns: 2.5fr 1fr; gap: 2rem; }
 .wf-img img { border-radius: 16px; box-shadow: 0 16px 50px rgba(0,0,0,0.4); width: 100%; height: auto; max-width: none; }
 
 /* ===== MAP ===== */
 .map-wrap { position: relative; max-width: 900px; margin: 0 auto; }
-.map-wrap img { width: 100%; max-height: 65vh; object-fit: contain; border-radius: 16px; box-shadow: 0 16px 50px rgba(0,0,0,0.4); }
+.map-wrap img { width: 100%; max-height: 65vh; object-fit: cover; border-radius: 16px; box-shadow: 0 16px 50px rgba(0,0,0,0.4); }
 .map-spots { position: absolute; inset: 0; }
 
 .hotspot {
@@ -505,7 +505,7 @@ img { max-width: 100%; height: auto; display: block; }
   .check-grid { grid-template-columns: 1fr; }
   .next-grid { grid-template-columns: 1fr; }
   .stat-row { justify-content: center; }
-  .side-dots { right: 0.3rem; transform: translateY(-50%) scale(0.7); background: rgba(0,0,0,0.3); padding: 5px; border-radius: 20px; }
+  .side-dots { display: none; }
   .pancasila-img img { max-width: 260px; }
   .slide { padding-bottom: 6rem; }
 }
@@ -546,10 +546,12 @@ img { max-width: 100%; height: auto; display: block; }
   border-radius: 0 !important; border: none !important;
 }
 .gif-modal-content img {
-  width: 100vh;
-  height: 100vw;
-  object-fit: contain;
-  transform: rotate(90deg);
+  width: 100vh !important;
+  height: 100vw !important;
+  max-width: none !important;
+  flex-shrink: 0 !important;
+  object-fit: contain !important;
+  transform: rotate(90deg) !important;
 }
 .gif-modal-content .modal-x {
   position: fixed; top: 20px; right: 20px; z-index: 10000;
