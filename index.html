@@ -1,0 +1,1366 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modul Pelatihan AR — Assemblr EDU × PPKn</title>
+    <meta
+      name="description"
+      content="Presentasi interaktif modul pelatihan pembuatan Augmented Reality bertema Jiwa Kebangsaan menggunakan Assemblr EDU."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- BG PARTICLES -->
+    <div class="bg-particles" id="particles" aria-hidden="true"></div>
+
+    <!-- SIDE DOTS -->
+    <div class="side-dots" id="sideDots"></div>
+
+    <!-- ============================== SLIDES ============================== -->
+    <div class="slide-deck" id="deck">
+      <!-- SLIDE 1 — TITLE -->
+      <div class="slide active" data-title="Beranda">
+        <div class="slide-inner title-layout">
+          <div>
+            <div class="badge anim-up">
+              <span class="dot"></span> Workshop Pelatihan 2025
+            </div>
+            <h1 class="anim-up-d1">
+              Pembuatan<br /><span class="gradient-text">Augmented Reality</span
+              ><br />Bertema Kebangsaan
+            </h1>
+            <p class="subtitle anim-up-d2">
+              Menumbuhkan cinta tanah air melalui teknologi Realitas
+              Tertambah.<br />Modul lengkap menggunakan
+              <strong>Assemblr EDU</strong> — Jenjang SD s.d. SMA.
+            </p>
+            <div class="stat-row anim-up-d3">
+              <div class="stat-item">
+                <div class="num gradient-text" data-count="7">0</div>
+                <div class="lbl">Modul</div>
+              </div>
+              <div class="stat-item">
+                <div class="num gradient-text" data-count="255">0</div>
+                <div class="lbl">Menit</div>
+              </div>
+              <div class="stat-item">
+                <div class="num gradient-text" data-count="5">0</div>
+                <div class="lbl">Proyek</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-img anim-scale">
+            <img
+              src="assets/hero.png"
+              alt="Ilustrasi AR Pendidikan Kebangsaan"
+              width="520"
+              height="520"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 2 — PENDAHULUAN -->
+      <div class="slide" data-title="Pendahuluan">
+        <div class="slide-inner">
+          <div class="section-label anim-up">Modul 1</div>
+          <h2
+            class="anim-up-d1"
+            style="
+              font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+              margin-bottom: 1.5rem;
+            "
+          >
+            Pendahuluan
+          </h2>
+          <div class="two-col">
+            <div class="anim-left">
+              <div class="glass" style="padding: 1.5rem">
+                <h3
+                  style="
+                    font-size: 0.95rem;
+                    margin-bottom: 0.75rem;
+                    color: var(--teal-400);
+                  "
+                >
+                  🎯 Latar Belakang
+                </h3>
+                <p
+                  style="
+                    font-size: 0.85rem;
+                    color: var(--white-70);
+                    line-height: 1.7;
+                  "
+                >
+                  PPKn sering dianggap hafalan & kurang menarik. Teknologi
+                  <strong>Augmented Reality</strong> hadir sebagai jembatan —
+                  menghadirkan materi secara visual, interaktif, dan
+                  kontekstual. Peserta didik bisa "melihat langsung" Garuda
+                  Pancasila, peta NKRI, dan pahlawan nasional dalam 3D.
+                </p>
+              </div>
+            </div>
+            <div class="anim-right">
+              <div class="glass" style="padding: 1.5rem">
+                <h3
+                  style="
+                    font-size: 0.95rem;
+                    margin-bottom: 0.75rem;
+                    color: var(--gold-400);
+                  "
+                >
+                  📌 Tujuan Pelatihan
+                </h3>
+                <ul
+                  style="
+                    font-size: 0.82rem;
+                    color: var(--white-70);
+                    padding-left: 1.1rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.4rem;
+                    line-height: 1.6;
+                  "
+                >
+                  <li>Memahami prasyarat perangkat & akun</li>
+                  <li>Mengoperasikan Assemblr EDU (mobile & web)</li>
+                  <li>Merancang konsep AR bertema kebangsaan/PPKn</li>
+                  <li>Membuat proyek AR dari nol hingga siap presentasi</li>
+                  <li>Mengevaluasi & mengembangkan proyek lanjutan</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 3 — ALUR MODUL -->
+      <div class="slide" data-title="Alur Modul">
+        <div class="slide-inner">
+          <div class="section-label anim-up">Alur Pelatihan</div>
+          <h2
+            class="anim-up-d1"
+            style="
+              font-size: clamp(1.5rem, 3.5vw, 2rem);
+              margin-bottom: 1.25rem;
+            "
+          >
+            7 Modul Bertahap
+          </h2>
+          <div class="mini-timeline anim-up-d2">
+            <div class="mini-tl-item">
+              <div class="tl-num">1</div>
+              <div class="tl-info">
+                <h4>Pendahuluan</h4>
+                <p>Latar belakang, tujuan, sasaran peserta</p>
+              </div>
+              <div class="tl-time">15 mnt</div>
+            </div>
+            <div class="mini-tl-item">
+              <div class="tl-num">2</div>
+              <div class="tl-info">
+                <h4>Prasyarat</h4>
+                <p>Perangkat keras/lunak, akun, aset kebangsaan</p>
+              </div>
+              <div class="tl-time">30 mnt</div>
+            </div>
+            <div class="mini-tl-item">
+              <div class="tl-num">3</div>
+              <div class="tl-info">
+                <h4>Pengenalan Assemblr EDU</h4>
+                <p>Antarmuka, AR Library, AR Creator, mode tampilan</p>
+              </div>
+              <div class="tl-time">45 mnt</div>
+            </div>
+            <div class="mini-tl-item">
+              <div class="tl-num">4</div>
+              <div class="tl-info">
+                <h4>Konsep AR Kebangsaan</h4>
+                <p>Pemilihan tema, ide proyek, alur interaksi</p>
+              </div>
+              <div class="tl-time">30 mnt</div>
+            </div>
+            <div class="mini-tl-item">
+              <div class="tl-num">5</div>
+              <div class="tl-info">
+                <h4>Praktik Membuat Proyek AR</h4>
+                <p>Langkah demi langkah pembuatan proyek</p>
+              </div>
+              <div class="tl-time">90 mnt</div>
+            </div>
+            <div class="mini-tl-item">
+              <div class="tl-num">6</div>
+              <div class="tl-info">
+                <h4>Uji Coba & Evaluasi</h4>
+                <p>Presentasi, rubrik penilaian, refleksi</p>
+              </div>
+              <div class="tl-time">30 mnt</div>
+            </div>
+            <div class="mini-tl-item">
+              <div class="tl-num">7</div>
+              <div class="tl-info">
+                <h4>Pengembangan & Penutup</h4>
+                <p>Proyek berseri, LKS QR, kolaborasi guru</p>
+              </div>
+              <div class="tl-time">15 mnt</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 4 — PRASYARAT / CHECKLIST -->
+      <div class="slide" data-title="Prasyarat">
+        <div class="slide-inner">
+          <div class="section-label anim-up">Modul 2</div>
+          <h2
+            class="anim-up-d1"
+            style="font-size: clamp(1.5rem, 3.5vw, 2rem); margin-bottom: 0.5rem"
+          >
+            Prasyarat & Checklist
+          </h2>
+          <p
+            class="anim-up-d2"
+            style="
+              color: var(--white-50);
+              margin-bottom: 1.25rem;
+              font-size: 0.9rem;
+            "
+          >
+            Klik untuk menandai item yang sudah terpenuhi.
+          </p>
+          <div class="two-col">
+            <div class="anim-left">
+              <div class="glass" style="padding: 1.25rem">
+                <h3
+                  style="
+                    font-size: 0.9rem;
+                    margin-bottom: 0.75rem;
+                    color: var(--teal-400);
+                  "
+                >
+                  📱 Perangkat & Akun
+                </h3>
+                <ul
+                  style="
+                    font-size: 0.8rem;
+                    color: var(--white-70);
+                    padding-left: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.35rem;
+                    line-height: 1.6;
+                  "
+                >
+                  <li>Smartphone Android 8+ / iOS 13+, RAM 3GB+</li>
+                  <li>Kamera belakang berfungsi baik</li>
+                  <li>Min. 1GB ruang kosong</li>
+                  <li>Internet stabil min. 5 Mbps</li>
+                  <li>Aplikasi Assemblr EDU terinstal</li>
+                  <li>Akun email terdaftar & terverifikasi</li>
+                </ul>
+              </div>
+            </div>
+            <div class="anim-right">
+              <div class="check-grid" id="checkGrid">
+                <div class="chk">
+                  <div class="chk-box">✓</div>
+                  <span>Assemblr EDU terpasang & bisa dibuka</span>
+                </div>
+                <div class="chk">
+                  <div class="chk-box">✓</div>
+                  <span>Akun terdaftar & berhasil login</span>
+                </div>
+                <div class="chk">
+                  <div class="chk-box">✓</div>
+                  <span>Kamera & internet berfungsi</span>
+                </div>
+                <div class="chk">
+                  <div class="chk-box">✓</div>
+                  <span>Perangkat sesuai spesifikasi</span>
+                </div>
+                <div class="chk">
+                  <div class="chk-box">✓</div>
+                  <span>Materi PPKn sudah disiapkan</span>
+                </div>
+                <div class="chk">
+                  <div class="chk-box">✓</div>
+                  <span>Gambar/marker tersedia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 5 — PENGENALAN ASSEMBLR EDU -->
+      <div class="slide" data-title="Assemblr EDU">
+        <div class="slide-inner">
+          <div class="section-label anim-up">Modul 3</div>
+          <h2
+            class="anim-up-d1"
+            style="
+              font-size: clamp(1.5rem, 3.5vw, 2rem);
+              margin-bottom: 1.25rem;
+            "
+          >
+            Pengenalan Assemblr EDU
+          </h2>
+          <div class="two-col">
+            <div class="anim-left">
+              <div
+                class="glass"
+                style="padding: 1.25rem; margin-bottom: 0.75rem"
+              >
+                <h3
+                  style="
+                    font-size: 0.9rem;
+                    margin-bottom: 0.6rem;
+                    color: var(--teal-400);
+                  "
+                >
+                  🧩 Dua Komponen Utama
+                </h3>
+                <p
+                  style="
+                    font-size: 0.8rem;
+                    color: var(--white-70);
+                    line-height: 1.6;
+                    margin-bottom: 0.4rem;
+                  "
+                >
+                  <strong>AR Library</strong> — Aplikasi mobile untuk
+                  menampilkan & menjelajah objek 3D/AR siap pakai.
+                </p>
+                <p
+                  style="
+                    font-size: 0.8rem;
+                    color: var(--white-70);
+                    line-height: 1.6;
+                  "
+                >
+                  <strong>AR Creator / Studio</strong> — Merancang proyek AR
+                  sendiri melalui antarmuka drag-and-drop.
+                </p>
+              </div>
+              <div class="glass" style="padding: 1.25rem">
+                <h3
+                  style="
+                    font-size: 0.9rem;
+                    margin-bottom: 0.6rem;
+                    color: var(--gold-400);
+                  "
+                >
+                  🖥️ Area Kerja Editor
+                </h3>
+                <ul
+                  style="
+                    font-size: 0.8rem;
+                    color: var(--white-70);
+                    padding-left: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.3rem;
+                    line-height: 1.6;
+                  "
+                >
+                  <li>
+                    <strong>Kanvas 3D</strong> — Letakkan, geser, putar, skala
+                    objek
+                  </li>
+                  <li>
+                    <strong>Panel Objek/Aset</strong> — Cari & tambah objek 3D,
+                    teks, gambar, audio
+                  </li>
+                  <li>
+                    <strong>Panel Properti</strong> — Atur posisi, ukuran,
+                    animasi, interaksi
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="anim-right">
+              <div
+                class="glass"
+                style="padding: 1.25rem; margin-bottom: 0.75rem"
+              >
+                <h3
+                  style="
+                    font-size: 0.9rem;
+                    margin-bottom: 0.6rem;
+                    color: var(--teal-400);
+                  "
+                >
+                  🗂️ Navigasi Antarmuka
+                </h3>
+                <ul
+                  style="
+                    font-size: 0.8rem;
+                    color: var(--white-70);
+                    padding-left: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.3rem;
+                    line-height: 1.6;
+                  "
+                >
+                  <li>
+                    <strong>Beranda</strong> — Proyek yang sedang dikerjakan &
+                    rekomendasi
+                  </li>
+                  <li>
+                    <strong>Discover</strong> — Jelajahi objek 3D & proyek AR
+                    publik
+                  </li>
+                  <li><strong>Create</strong> — Mulai proyek baru</li>
+                  <li><strong>Library Saya</strong> — Objek yang disimpan</li>
+                  <li><strong>Profil</strong> — Kelola akun & pengaturan</li>
+                </ul>
+              </div>
+              <div class="glass" style="padding: 1.25rem">
+                <h3
+                  style="
+                    font-size: 0.9rem;
+                    margin-bottom: 0.6rem;
+                    color: var(--gold-400);
+                  "
+                >
+                  📷 Mode Tampilan AR
+                </h3>
+                <p
+                  style="
+                    font-size: 0.8rem;
+                    color: var(--white-70);
+                    line-height: 1.6;
+                    margin-bottom: 0.3rem;
+                  "
+                >
+                  <strong>Markerless</strong> — Objek AR muncul via deteksi
+                  permukaan kamera (meja/lantai).
+                </p>
+                <p
+                  style="
+                    font-size: 0.8rem;
+                    color: var(--white-70);
+                    line-height: 1.6;
+                  "
+                >
+                  <strong>Marker-based</strong> — Objek muncul saat kamera
+                  mengarah ke gambar/kartu tertentu.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 6 — PANCASILA INTERAKTIF -->
+      <div class="slide" data-title="Pancasila">
+        <div class="slide-inner">
+          <div class="section-label anim-up">Garuda Pancasila Interaktif</div>
+          <h2
+            class="anim-up-d1"
+            style="font-size: clamp(1.5rem, 3.5vw, 2rem); margin-bottom: 1rem"
+          >
+            Makna Tiap Sila
+          </h2>
+          <div class="two-col">
+            <div class="pancasila-img anim-left">
+              <img
+                src="assets/pancasila.png"
+                alt="Garuda Pancasila"
+                width="380"
+                height="380"
+              />
+            </div>
+            <div class="sila-list anim-right" id="silaList">
+              <div
+                class="sila-card"
+                style="--sila-color: #f0d078"
+                data-sila="1"
+              >
+                <div class="sila-num">1</div>
+                <div class="sila-text">
+                  <h4>⭐ Ketuhanan Yang Maha Esa</h4>
+                  <p>
+                    Bintang emas — percaya & bertakwa kepada Tuhan sesuai agama
+                    masing-masing.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="sila-card"
+                style="--sila-color: #a0a0a0"
+                data-sila="2"
+              >
+                <div class="sila-num">2</div>
+                <div class="sila-text">
+                  <h4>⛓ Kemanusiaan yang Adil dan Beradab</h4>
+                  <p>
+                    Rantai emas — menghargai harkat manusia, menjunjung
+                    kemanusiaan.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="sila-card"
+                style="--sila-color: #22c55e"
+                data-sila="3"
+              >
+                <div class="sila-num">3</div>
+                <div class="sila-text">
+                  <h4>🌳 Persatuan Indonesia</h4>
+                  <p>
+                    Pohon beringin — mengutamakan persatuan di atas kepentingan
+                    pribadi.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="sila-card"
+                style="--sila-color: #ef4444"
+                data-sila="4"
+              >
+                <div class="sila-num">4</div>
+                <div class="sila-text">
+                  <h4>🐃 Kerakyatan yang Dipimpin Hikmat</h4>
+                  <p>Kepala banteng — musyawarah untuk kepentingan bersama.</p>
+                </div>
+              </div>
+              <div
+                class="sila-card"
+                style="--sila-color: #f59e0b"
+                data-sila="5"
+              >
+                <div class="sila-num">5</div>
+                <div class="sila-text">
+                  <h4>🌾 Keadilan Sosial bagi Seluruh Rakyat</h4>
+                  <p>
+                    Padi & kapas — mewujudkan keadilan dan kesejahteraan tanpa
+                    terkecuali.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 7 — IDE PROYEK AR -->
+      <div class="slide" data-title="Ide Proyek">
+        <div class="slide-inner">
+          <div class="section-label anim-up">
+            Modul 4 — Konsep AR Kebangsaan
+          </div>
+          <h2
+            class="anim-up-d1"
+            style="font-size: clamp(1.5rem, 3.5vw, 2rem); margin-bottom: 1rem"
+          >
+            5 Ide Proyek AR PPKn
+          </h2>
+          <div class="project-grid anim-up-d2" id="projGrid">
+            <div class="proj-card" data-proj="garuda">
+              <div class="proj-icon">🦅</div>
+              <h4>Garuda Pancasila Interaktif</h4>
+              <p>Model 3D Garuda, teks makna sila saat perisai disentuh</p>
+              <div class="proj-tags">
+                <span class="proj-tag">Simbol Negara</span
+                ><span class="proj-tag">Interaktif</span>
+              </div>
+            </div>
+            <div class="proj-card" data-proj="peta">
+              <div class="proj-icon">🗺️</div>
+              <h4>Peta NKRI 3D</h4>
+              <p>Peta timbul 3D, penanda pulau, ikon budaya daerah</p>
+              <div class="proj-tags">
+                <span class="proj-tag">Wawasan Nusantara</span
+                ><span class="proj-tag">Keberagaman</span>
+              </div>
+            </div>
+            <div class="proj-card" data-proj="pahlawan">
+              <div class="proj-icon">🎖️</div>
+              <h4>Galeri Pahlawan</h4>
+              <p>Figur pahlawan, biografi singkat, audio narasi</p>
+              <div class="proj-tags">
+                <span class="proj-tag">Perjuangan</span
+                ><span class="proj-tag">Audio</span>
+              </div>
+            </div>
+            <div class="proj-card" data-proj="upacara">
+              <div class="proj-icon">🇮🇩</div>
+              <h4>Upacara Bendera Virtual</h4>
+              <p>Animasi tiang bendera, simulasi urutan upacara</p>
+              <div class="proj-tags">
+                <span class="proj-tag">Disiplin</span
+                ><span class="proj-tag">Animasi</span>
+              </div>
+            </div>
+            <div class="proj-card" data-proj="rumah-adat">
+              <div class="proj-icon">🏘️</div>
+              <h4>Rumah Adat Nusantara</h4>
+              <p>Model rumah adat tiap pulau, keterangan daerah</p>
+              <div class="proj-tags">
+                <span class="proj-tag">Bhinneka Tunggal Ika</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 8 — PRAKTIK 1 -->
+      <div class="slide" data-title="Praktik AR (1/6)">
+        <div class="slide-inner">
+          <div class="section-label anim-up">Modul 5 — Langkah 1/6</div>
+          <h2
+            class="anim-up-d1"
+            style="font-size: clamp(1.5rem, 3.5vw, 2rem); margin-bottom: 1rem"
+          >
+            Praktik Membuat Proyek AR
+          </h2>
+          <div class="two-col">
+            <div class="wf-img anim-left">
+              <img
+                src="assets/step1.gif"
+                alt="Workflow pembuatan AR"
+                width="500"
+                height="500"
+              />
+            </div>
+            <div class="wf-steps anim-right">
+              <div
+                class="wf-step active"
+                style="
+                  padding: 1.5rem;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  gap: 1rem;
+                "
+              >
+                <div style="display: flex; align-items: center; gap: 1rem">
+                  <div
+                    class="wf-num"
+                    style="
+                      width: 45px;
+                      height: 45px;
+                      font-size: 1.2rem;
+                      flex-shrink: 0;
+                    "
+                  >
+                    1
+                  </div>
+                  <h4 style="font-size: 1.3rem; margin: 0">Buat Proyek Baru</h4>
+                </div>
+                <ul
+                  style="
+                    font-size: 0.95rem;
+                    padding-left: 1.25rem;
+                    line-height: 1.7;
+                    color: var(--white-70);
+                    margin: 0;
+                  "
+                >
+                  <li>
+                    Buka aplikasi atau web Assemblr EDU dan
+                    <strong>Login</strong> dengan akun Anda.
+                  </li>
+                  <li>
+                    Di halaman utama (Beranda/Home), tekan tombol
+                    <strong>Create</strong> (+).
+                  </li>
+                  <li>
+                    Pilih <strong>New Project</strong> untuk memulai kanvas
+                    kosong.
+                  </li>
+                  <li>
+                    Pada pilihan jenis mode, pilih
+                    <strong>Default Editor</strong> untuk proyeksi AR pada
+                    permukaan datar.
+                  </li>
+                  <li>Pilih Versi <strong>Editor Baru</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 9 — PRAKTIK 2 -->
+      <div class="slide" data-title="Praktik AR (2/6)">
+        <div class="slide-inner">
+          <div class="section-label anim-up">Modul 5 — Langkah 2/6</div>
+          <h2
+            class="anim-up-d1"
+            style="font-size: clamp(1.5rem, 3.5vw, 2rem); margin-bottom: 1rem"
+          >
+            Praktik Membuat Proyek AR
+          </h2>
+          <div class="two-col">
+            <div class="wf-img anim-left">
+              <img
+                src="assets/workflow.png"
+                alt="Workflow pembuatan AR"
+                width="500"
+                height="500"
+              />
+            </div>
+            <div class="wf-steps anim-right">
+              <div
+                class="wf-step active"
+                style="
+                  padding: 1.5rem;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  gap: 1rem;
+                "
+              >
+                <div style="display: flex; align-items: center; gap: 1rem">
+                  <div
+                    class="wf-num"
+                    style="
+                      width: 45px;
+                      height: 45px;
+                      font-size: 1.2rem;
+                      flex-shrink: 0;
+                    "
+                  >
+                    2
+                  </div>
+                  <h4 style="font-size: 1.3rem; margin: 0">
+                    Tambahkan Objek 3D
+                  </h4>
+                </div>
+                <ul
+                  style="
+                    font-size: 0.95rem;
+                    padding-left: 1.25rem;
+                    line-height: 1.7;
+                    color: var(--white-70);
+                    margin: 0;
+                  "
+                >
+                  <li>Buka panel <strong>AR Library</strong> pada editor.</li>
+                  <li>
+                    Ketik kata kunci (misal: "Garuda" atau "Pancasila") di kolom
+                    pencarian.
+                  </li>
+                  <li>
+                    Pilih objek 3D yang sesuai, lalu tarik (<em>drag</em>) ke
+                    tengah kanvas.
+                  </li>
+                  <li>
+                    Gunakan panel properti untuk mengatur
+                    <strong>Skala</strong> dan <strong>Posisi</strong> objek.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 10 — PRAKTIK 3 -->
+      <div class="slide" data-title="Praktik AR (3/6)">
+        <div class="slide-inner">
+          <div class="section-label anim-up">Modul 5 — Langkah 3/6</div>
+          <h2
+            class="anim-up-d1"
+            style="font-size: clamp(1.5rem, 3.5vw, 2rem); margin-bottom: 1rem"
+          >
+            Praktik Membuat Proyek AR
+          </h2>
+          <div class="two-col">
+            <div class="wf-img anim-left">
+              <img
+                src="assets/workflow.png"
+                alt="Workflow pembuatan AR"
+                width="500"
+                height="500"
+              />
+            </div>
+            <div class="wf-steps anim-right">
+              <div
+                class="wf-step active"
+                style="
+                  padding: 1.5rem;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  gap: 1rem;
+                "
+              >
+                <div style="display: flex; align-items: center; gap: 1rem">
+                  <div
+                    class="wf-num"
+                    style="
+                      width: 45px;
+                      height: 45px;
+                      font-size: 1.2rem;
+                      flex-shrink: 0;
+                    "
+                  >
+                    3
+                  </div>
+                  <h4 style="font-size: 1.3rem; margin: 0">
+                    Elemen Interaktif
+                  </h4>
+                </div>
+                <ul
+                  style="
+                    font-size: 0.95rem;
+                    padding-left: 1.25rem;
+                    line-height: 1.7;
+                    color: var(--white-70);
+                    margin: 0;
+                  "
+                >
+                  <li>
+                    Tambahkan elemen <strong>Teks</strong> untuk menuliskan
+                    materi/makna.
+                  </li>
+                  <li>
+                    Pilih objek 3D utama, buka tab
+                    <strong>Interactivity</strong>.
+                  </li>
+                  <li>
+                    Pilih tipe interaksi <strong>Tap to Show/Hide</strong>.
+                  </li>
+                  <li>
+                    Targetkan interaksi tersebut ke elemen Teks yang baru
+                    dibuat.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 11 — PRAKTIK 4 -->
+      <div class="slide" data-title="Praktik AR (4/6)">
+        <div class="slide-inner">
+          <div class="section-label anim-up">Modul 5 — Langkah 4/6</div>
+          <h2
+            class="anim-up-d1"
+            style="font-size: clamp(1.5rem, 3.5vw, 2rem); margin-bottom: 1rem"
+          >
+            Praktik Membuat Proyek AR
+          </h2>
+          <div class="two-col">
+            <div class="wf-img anim-left">
+              <img
+                src="assets/workflow.png"
+                alt="Workflow pembuatan AR"
+                width="500"
+                height="500"
+              />
+            </div>
+            <div class="wf-steps anim-right">
+              <div
+                class="wf-step active"
+                style="
+                  padding: 1.5rem;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  gap: 1rem;
+                "
+              >
+                <div style="display: flex; align-items: center; gap: 1rem">
+                  <div
+                    class="wf-num"
+                    style="
+                      width: 45px;
+                      height: 45px;
+                      font-size: 1.2rem;
+                      flex-shrink: 0;
+                    "
+                  >
+                    4
+                  </div>
+                  <h4 style="font-size: 1.3rem; margin: 0">Animasi & Urutan</h4>
+                </div>
+                <ul
+                  style="
+                    font-size: 0.95rem;
+                    padding-left: 1.25rem;
+                    line-height: 1.7;
+                    color: var(--white-70);
+                    margin: 0;
+                  "
+                >
+                  <li>
+                    Buka panel <strong>Animation</strong> untuk memberikan efek
+                    transisi.
+                  </li>
+                  <li>
+                    Gunakan efek seperti <strong>Fade In</strong> atau
+                    <strong>Scale Up</strong> saat objek muncul.
+                  </li>
+                  <li>
+                    Atur <em>Sequence</em> (urutan waktu) jika terdapat banyak
+                    elemen.
+                  </li>
+                  <li>
+                    Tekan tombol <strong>Preview</strong> untuk melihat hasil
+                    sementara.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 12 — PRAKTIK 5 -->
+      <div class="slide" data-title="Praktik AR (5/6)">
+        <div class="slide-inner">
+          <div class="section-label anim-up">Modul 5 — Langkah 5/6</div>
+          <h2
+            class="anim-up-d1"
+            style="font-size: clamp(1.5rem, 3.5vw, 2rem); margin-bottom: 1rem"
+          >
+            Praktik Membuat Proyek AR
+          </h2>
+          <div class="two-col">
+            <div class="wf-img anim-left">
+              <img
+                src="assets/workflow.png"
+                alt="Workflow pembuatan AR"
+                width="500"
+                height="500"
+              />
+            </div>
+            <div class="wf-steps anim-right">
+              <div
+                class="wf-step active"
+                style="
+                  padding: 1.5rem;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  gap: 1rem;
+                "
+              >
+                <div style="display: flex; align-items: center; gap: 1rem">
+                  <div
+                    class="wf-num"
+                    style="
+                      width: 45px;
+                      height: 45px;
+                      font-size: 1.2rem;
+                      flex-shrink: 0;
+                    "
+                  >
+                    5
+                  </div>
+                  <h4 style="font-size: 1.3rem; margin: 0">
+                    Simpan & Uji Coba
+                  </h4>
+                </div>
+                <ul
+                  style="
+                    font-size: 0.95rem;
+                    padding-left: 1.25rem;
+                    line-height: 1.7;
+                    color: var(--white-70);
+                    margin: 0;
+                  "
+                >
+                  <li>
+                    Tekan tombol <strong>Save</strong> lalu
+                    <strong>Publish</strong> proyek Anda.
+                  </li>
+                  <li>
+                    Buka menu <strong>My Library</strong> untuk melihat proyek
+                    yang tersimpan.
+                  </li>
+                  <li>Pilih opsi <strong>View in AR</strong>.</li>
+                  <li>
+                    Arahkan kamera ke permukaan datar (meja/lantai) dan ketuk
+                    layar.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 13 — PRAKTIK 6 -->
+      <div class="slide" data-title="Praktik AR (6/6)">
+        <div class="slide-inner">
+          <div class="section-label anim-up">Modul 5 — Langkah 6/6</div>
+          <h2
+            class="anim-up-d1"
+            style="font-size: clamp(1.5rem, 3.5vw, 2rem); margin-bottom: 1rem"
+          >
+            Praktik Membuat Proyek AR
+          </h2>
+          <div class="two-col">
+            <div class="wf-img anim-left">
+              <img
+                src="assets/workflow.png"
+                alt="Workflow pembuatan AR"
+                width="500"
+                height="500"
+              />
+            </div>
+            <div class="wf-steps anim-right">
+              <div
+                class="wf-step active"
+                style="
+                  padding: 1.5rem;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  gap: 1rem;
+                "
+              >
+                <div style="display: flex; align-items: center; gap: 1rem">
+                  <div
+                    class="wf-num"
+                    style="
+                      width: 45px;
+                      height: 45px;
+                      font-size: 1.2rem;
+                      flex-shrink: 0;
+                    "
+                  >
+                    6
+                  </div>
+                  <h4 style="font-size: 1.3rem; margin: 0">Berbagi via QR</h4>
+                </div>
+                <ul
+                  style="
+                    font-size: 0.95rem;
+                    padding-left: 1.25rem;
+                    line-height: 1.7;
+                    color: var(--white-70);
+                    margin: 0;
+                  "
+                >
+                  <li>
+                    Pada halaman detail proyek, ketuk tombol
+                    <strong>Share</strong>.
+                  </li>
+                  <li>
+                    Pilih salin tautan (Copy Link) untuk membagikannya via Chat.
+                  </li>
+                  <li>
+                    Atau, gunakan fitur <strong>Generate QR Code</strong>.
+                  </li>
+                  <li>
+                    Peserta didik dapat langsung memindai QR tersebut via
+                    aplikasi.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 9 — PETA NKRI -->
+      <div class="slide" data-title="Peta NKRI">
+        <div class="slide-inner">
+          <div class="section-label anim-up">Visualisasi Interaktif</div>
+          <h2
+            class="anim-up-d1"
+            style="font-size: clamp(1.5rem, 3.5vw, 2rem); margin-bottom: 1rem"
+          >
+            Peta NKRI & Budaya Nusantara
+          </h2>
+          <p
+            class="anim-up-d2"
+            style="
+              text-align: center;
+              color: var(--white-50);
+              margin-bottom: 1rem;
+              font-size: 0.85rem;
+            "
+          >
+            Arahkan kursor atau klik titik-titik pada peta.
+          </p>
+          <div class="map-wrap anim-scale">
+            <img
+              src="assets/nkri_map.png"
+              alt="Peta Indonesia"
+              width="800"
+              height="450"
+            />
+            <div class="map-spots">
+              <div class="hotspot" style="left: 16%; top: 40%">
+                <div class="hdot"></div>
+                <div class="hring"></div>
+                <div class="htip">
+                  <h4>🏠 Rumah Gadang</h4>
+                  <p>Minangkabau, Sumatera Barat. Atap tanduk kerbau.</p>
+                </div>
+              </div>
+              <div class="hotspot" style="left: 35%; top: 72%">
+                <div class="hdot"></div>
+                <div class="hring"></div>
+                <div class="htip">
+                  <h4>🏛️ Joglo</h4>
+                  <p>Rumah adat Jawa. Atap menjulang, harmoni alam.</p>
+                </div>
+              </div>
+              <div class="hotspot" style="left: 44%; top: 38%">
+                <div class="hdot"></div>
+                <div class="hring"></div>
+                <div class="htip">
+                  <h4>🏘️ Rumah Lamin</h4>
+                  <p>Dayak, Kalimantan Timur. Rumah panjang komunal.</p>
+                </div>
+              </div>
+              <div class="hotspot" style="left: 60%; top: 42%">
+                <div class="hdot"></div>
+                <div class="hring"></div>
+                <div class="htip">
+                  <h4>⛵ Tongkonan</h4>
+                  <p>Toraja, Sulawesi Selatan. Atap melengkung perahu.</p>
+                </div>
+              </div>
+              <div class="hotspot" style="left: 84%; top: 48%">
+                <div class="hdot"></div>
+                <div class="hring"></div>
+                <div class="htip">
+                  <h4>🛖 Honai</h4>
+                  <p>Papua. Bulat, atap jerami, dataran tinggi.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 10 — EVALUASI -->
+      <div class="slide" data-title="Evaluasi">
+        <div class="slide-inner">
+          <div class="section-label anim-up">Modul 6</div>
+          <h2
+            class="anim-up-d1"
+            style="font-size: clamp(1.5rem, 3.5vw, 2rem); margin-bottom: 1rem"
+          >
+            Rubrik Penilaian Proyek AR
+          </h2>
+          <div class="anim-up-d2" style="overflow-x: auto">
+            <table class="rubrik" id="rubrikTable">
+              <thead>
+                <tr>
+                  <th>Aspek</th>
+                  <th>Indikator</th>
+                  <th>Skor (1–4)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Kesesuaian Materi</strong></td>
+                  <td>Objek AR relevan dengan capaian PPKn</td>
+                  <td>
+                    <div class="star-row" data-row="materi">
+                      <div class="star" data-val="1">★</div>
+                      <div class="star" data-val="2">★</div>
+                      <div class="star" data-val="3">★</div>
+                      <div class="star" data-val="4">★</div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Interaktivitas</strong></td>
+                  <td>Interaksi sentuh/animasi/audio berfungsi</td>
+                  <td>
+                    <div class="star-row" data-row="interaktivitas">
+                      <div class="star" data-val="1">★</div>
+                      <div class="star" data-val="2">★</div>
+                      <div class="star" data-val="3">★</div>
+                      <div class="star" data-val="4">★</div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Kejelasan Pesan</strong></td>
+                  <td>Nilai kebangsaan jelas & mudah dipahami</td>
+                  <td>
+                    <div class="star-row" data-row="pesan">
+                      <div class="star" data-val="1">★</div>
+                      <div class="star" data-val="2">★</div>
+                      <div class="star" data-val="3">★</div>
+                      <div class="star" data-val="4">★</div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Kerapian Tampilan</strong></td>
+                  <td>Tata letak proporsional, tidak tumpang tindih</td>
+                  <td>
+                    <div class="star-row" data-row="tampilan">
+                      <div class="star" data-val="1">★</div>
+                      <div class="star" data-val="2">★</div>
+                      <div class="star" data-val="3">★</div>
+                      <div class="star" data-val="4">★</div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="score-display" id="scoreDisplay">
+              Total Skor: 0 / 16
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 11 — REFLEKSI -->
+      <div class="slide" data-title="Refleksi">
+        <div
+          class="slide-inner"
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <div class="section-label anim-up">Modul 6 — Lanjutan</div>
+          <h2
+            class="anim-up-d1"
+            style="
+              font-size: clamp(1.5rem, 3.5vw, 2rem);
+              margin-bottom: 1.5rem;
+              text-align: center;
+            "
+          >
+            Pertanyaan Refleksi
+          </h2>
+          <div class="glass refleksi anim-up-d2">
+            <h3>💭 Refleksi Setelah Praktik</h3>
+            <ol>
+              <li>Bagian mana dari proses pembuatan yang paling menantang?</li>
+              <li>
+                Apakah proyek AR ini dapat langsung diterapkan pada rencana
+                pembelajaran di kelas?
+              </li>
+              <li>
+                Penyesuaian apa yang diperlukan agar proyek lebih efektif
+                digunakan peserta didik?
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 12 — PENGEMBANGAN LANJUTAN -->
+      <div class="slide" data-title="Pengembangan">
+        <div class="slide-inner">
+          <div class="section-label anim-up">Modul 7</div>
+          <h2
+            class="anim-up-d1"
+            style="
+              font-size: clamp(1.5rem, 3.5vw, 2rem);
+              margin-bottom: 1.25rem;
+            "
+          >
+            Pengembangan Lanjutan
+          </h2>
+          <div class="next-grid anim-up-d2">
+            <div class="next-card">
+              <div class="ico">📅</div>
+              <h4>Proyek AR Berseri</h4>
+              <p>
+                Rangkaian proyek sesuai tema bulanan: Kemerdekaan, Sumpah
+                Pemuda, Hari Pahlawan.
+              </p>
+            </div>
+            <div class="next-card">
+              <div class="ico">📄</div>
+              <h4>LKS Berbasis QR Code</h4>
+              <p>
+                Integrasikan proyek AR ke Lembar Kerja Siswa dengan kode QR yang
+                bisa dipindai.
+              </p>
+            </div>
+            <div class="next-card">
+              <div class="ico">🤝</div>
+              <h4>Kolaborasi Antar-Guru</h4>
+              <p>
+                Bekerja sama dengan guru seni/budaya untuk memperkaya model 3D
+                dan konten.
+              </p>
+            </div>
+            <div class="next-card">
+              <div class="ico">🌐</div>
+              <h4>Komunitas Berbagi</h4>
+              <p>
+                Bentuk komunitas berbagi proyek AR PPKn via Discover di Assemblr
+                EDU.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 13 — PENUTUP -->
+      <div class="slide" data-title="Penutup">
+        <div class="slide-inner closing-center">
+          <div style="font-size: 4rem" class="anim-scale">🇮🇩</div>
+          <div class="tagline anim-up-d1">
+            — Selamat Berkarya dan Merdeka Belajar —
+          </div>
+          <h2 class="anim-up-d2">Terima Kasih</h2>
+          <p
+            class="anim-up-d3"
+            style="color: var(--white-50); font-size: 0.95rem; max-width: 500px"
+          >
+            Modul Pelatihan Pembuatan Augmented Reality<br />
+            Bertema Jiwa Kebangsaan & PPKn<br />
+            Menggunakan
+            <strong style="color: var(--teal-400)">Assemblr EDU</strong>
+          </p>
+          <p
+            class="anim-up-d4"
+            style="
+              color: var(--white-30);
+              font-size: 0.8rem;
+              margin-top: 0.5rem;
+            "
+          >
+            Jenjang SD – SMA &bull; Untuk Guru, Fasilitator, dan Peserta
+            Pelatihan
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM BAR -->
+    <div class="bottom-bar">
+      <div class="slide-counter">
+        <span class="current" id="curSlide">1</span> /
+        <span id="totalSlides">18</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="nav-arrows">
+        <button class="nav-btn" id="btnPrev" aria-label="Slide sebelumnya">
+          ◀
+        </button>
+        <button class="nav-btn" id="btnNext" aria-label="Slide berikutnya">
+          ▶
+        </button>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal-bg" id="modalBg">
+      <div class="modal-box">
+        <button class="modal-x" id="modalX" aria-label="Tutup">&times;</button>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
